@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label fx:id="label">
+                    <HBox.margin>
+                        <Insets top="33.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#clear" text="Clear">
+                    <HBox.margin>
+                        <Insets bottom="-30.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <TextField fx:id="textField1" />
+                <Button mnemonicParsing="false" onAction="#add" text="+" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="27.0" right="27.0" />
+                    </HBox.margin>
+                </Button>
+                <TextField fx:id="textField2">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints maxWidth="200.0" minWidth="20.0" prefWidth="200.0" />
+        <ColumnConstraints maxWidth="180.0" minWidth="0.0" prefWidth="0.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
